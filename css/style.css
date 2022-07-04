@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container {
+    margin: auto;
+    max-width: 1400px;
+    text-align: center;
+
+}
+
+:root {
+    --cards-color: #000000;
+    --cards-text-color: #ffffff;
+    --title-color: #e53170;
+    --mail-link-color: #65c6e5;
+    --cards-hight: 100px;
+}
+
+header {
+    padding: 50px 0;
+    margin-bottom: 10px
+}
+
+h1 {
+    color: var(--title-color);
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.cardbox {
+    float: left;
+}
+
+.card {
+    float: left;
+    background-color: var(--cards-color);
+    height: 100px;
+    width: calc(100%/3 - 40px);
+    margin: 20px;
+    color: var(--cards-text-color);
+    text-align: left;
+
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.card-img>img {
+    height: 100px;
+    float: left;
+    padding-right: 10px;
+}
+
+.card-txt {
+    padding: 10px;
+    height: 100px;
+    vertical-align: middle;
+    line-height: calc(100% / 3 + 20px);
+}
+
+.email {
+    text-decoration: none;
+    color: var(--mail-link-color);
+    display: block;
+}
